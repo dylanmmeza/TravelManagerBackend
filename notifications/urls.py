@@ -1,0 +1,71 @@
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path(
+        "create_event_alert/",
+        views.create_event_alert,
+        name="create_event_alert",
+    ),
+    path(
+        "create_trip_alert/",
+        views.create_trip_alert,
+        name="create_trip_alert",
+    ),
+    path(
+        "create_friend_request/",
+        views.create_friend_request,
+        name="create_friend_request",
+    ),
+    path(
+        "accept_friend_request/",
+        views.accept_friend_request,
+        name="accept_friend_request",
+    ),
+    path(
+        "reject_friend_request/",
+        views.reject_friend_request,
+        name="reject_friend_request",
+    ),
+    path(
+        "cancel_friend_request/",
+        views.cancel_friend_request,
+        name="cancel_friend_request",
+    ),
+    path(
+        "create_trip_request/",
+        views.create_trip_request,
+        name="create_trip_request",
+    ),
+    path(
+        "accept_trip_request/",
+        views.accept_trip_request,
+        name="accept_trip_request",
+    ),
+    path(
+        "reject_trip_request/",
+        views.reject_trip_request,
+        name="reject_trip_request",
+    ),
+    path(
+        "cancel_trip_request/",
+        views.cancel_trip_request,
+        name="cancel_trip_request",
+    ),
+    path(
+        "create_general_trip_notification/",
+        views.create_general_trip_notification,
+        name="create_general_trip_notification",
+    ),
+    path(
+        "unactivate_general_trip_notification/",
+        views.unactivate_general_trip_notification,
+        name="unactivate_general_trip_notification",
+    ),
+    path(
+        "get_notifications/",
+        views.get_notifications,
+        name="get_notifications",
+    ),
+]
